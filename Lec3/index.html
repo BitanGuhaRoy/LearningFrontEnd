@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to CSS</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <style>
+        /* element selector */
+        /* html and css in the same file : Internal css */
+        h1{
+            color: red;
+        }
+
+        /* below code will make every list item blue  */
+/* ol li{
+    color: blue;
+} */
+
+
+
+        /* descendent selector */
+
+        div li{
+            color: blue;
+        }
+        /* Direct children */
+        div>h1>span{
+            color: blue;
+        }
+
+        div>span>h1{
+            color: chocolate;
+        }
+        
+        .test{
+            color:blue;
+
+        }
+        .c1.c2{
+            color: rgb(213, 167, 167);
+           
+        }
+        /* .c2
+        {
+            color: red;
+
+        } */
+
+        .m1 .m2{
+            color: brown;
+        }
+
+        .m1{
+            color: yellowgreen;
+        }
+        .l1>p{
+            color: brown;
+        }
+
+        .l1>span>p{
+            color: yellow;
+        }
+         /* id selection */
+        #the-one{
+            color: blue;
+        }
+
+        input[value="click me"]{
+           color: blue;
+        }
+
+        a:hover{
+            color: green;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h3>Sewli High School(H.S)</h3>
+
+    <h1>I'm Bitan Guha Roy</h1>
+   
+    <h2 style="color: yellowgreen;">Learning frontend</h2>  <!-- inline css -->
+
+ 
+        <ol>
+            <li>Hi </li>
+            <Li>There</Li>
+        </ol>
+   
+
+     <div>
+        <ol>
+
+            <li>I'm </li>
+            <Li>using</Li>
+            <Li>Whatsapp</Li>
+        </ol>
+     </div>
+    
+
+
+     <div>
+        <h1>
+            <span>
+                Hurray !!
+            </span>
+        </h1>
+     </div>
+     <div>
+        <span>
+        <h1>
+            <span>
+                we are learning CSSS !!
+            </span>
+        </h1>
+    </span>
+     </div>
+
+
+     <h3 class="test">I'm heading three...</h3>
+     <p class="test">I'm paragraph</p>
+
+<div class="c1 c2">
+    select me
+
+</div>
+     <p class="c1">I'm heading three...</p>
+     <p class="c2">I'm paragraph</p>
+
+
+
+     <div class="m1">
+
+        <div>
+            <div>
+                <span>
+                    <div class="m2">
+                  I'm here find me..
+                    </div>
+                </span>
+            </div>
+        </div>
+
+
+     </div>
+
+     <span>
+        <div class="m1">
+         Don't select me
+        </div>
+     </span>
+     
+
+    <div class="l1">
+
+        <p>
+            I'm direct son make me blue..
+        </p>
+
+    </div>
+
+    <div class="l1">
+    <span>
+        <p>
+            I'm indirect son..
+        </p>
+    </span>
+
+    </div>
+
+    <p class="s2" id="the-one"> Select one </p>
+    <p class="s2" id="the-one"> Select me </p>
+
+   <form >
+
+    <input type="button" value="click me"> 
+    <input type="button" value="Please click me">
+   </form>
+
+   <a href="#">Link</a>
+</body>
+</html>
