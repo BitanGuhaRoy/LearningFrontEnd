@@ -5,3 +5,5 @@ console.log(arr1[2])
 console.log(arr1[6])
 console.log(arr1[5])
 
+
+arr1[3]='RNR'
