@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Question1</title>
+</head>
+<body>
+    <button id="btn_1">
+        Say Hello!
+    </button>
+
+    <script>
+        // on clicking the button append hello to the page
+        // let btn=document.getElementById("btn_1");
+
+        // or 
+        let btn= document.querySelector("#btn_1");
+
+        // definition of query selector is that it will select the first element with the given id
+        // if we have multiple elements with the same id then it will select the first one only
+        //if we have no match then it will return null
+
+
+        // e event argument
+        // it holds the information about the event that has occured
+        btn.addEventListener("click",function(e)
+        {
+            // console.log(e);
+            let divelem= document.createElement("div");// creates element in DOM
+            divelem.innerText="Hello";
+
+           let body=  document.querySelector('body')
+            body.appendChild(divelem);
+
+        })
+
+
+       console.log(btn);
+
+    </script>
+
+
+</body>
+</html>

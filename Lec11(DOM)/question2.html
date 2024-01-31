@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    
+    <ul>
+       <li>1</li>
+       <li>2</li>
+         <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>8</li>
+            <li>10</li>
+
+
+    </ul>
+
+    <script>
+
+        // add the missing elements in the list
+
+        let ourlist = document.querySelector('ul');
+
+       
+
+        // console.log(list);
+
+
+        let alllistelemnts= document.querySelectorAll('li');
+         // it selects all the ements with the tag li
+
+        // all the li elements are selected and stored in an array like structure with indexing 
+        //this is called node list 
+        // no array methods are applied as this is not an array
+        // but array operations are allowed 
+
+        console.log(alllistelemnts)
+
+        let wrongIndex= alllistelemnts[5];
+        // console.log(wrongIndex);
+        //selects the 6th element from the list
+
+
+        let sixthElement= document.createElement('li');
+
+        sixthElement.innerText="6";
+    ourlist.insertBefore(sixthElement,wrongIndex);
+        
+
+    
+
+
+
+    </script>
+</body>
+</html>
