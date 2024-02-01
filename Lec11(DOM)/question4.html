@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+
+    <style>
+        *{
+            box-sizing: border-box; 
+        }
+        .body{
+
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 5rem;
+        }
+
+        .blue{
+            background-color: blue;
+            box-shadow: 0px 0px 6px 5px ;
+        }
+
+        .green{
+            background-color: green;
+            box-shadow: 0px 0px 6px 5px ;
+        }
+
+        .red{
+            background-color: red;
+            box-shadow: 0px 0px 6px 5px ;
+        }
+
+        .card{
+            border: 1px solid;
+            height: 10rem;
+            width: 10rem;
+            margin: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <span>
+    <div class="card" data-color="blue" ></div> 
+    <div class="card" data-color="red" ></div>
+</span>
+    <div class="card" data-color="blue" ></div>
+    <div class="card" data-color="red" ></div>
+    <div class="card" data-color="green" ></div>
+    <div class="card" data-color="blue" ></div>
+    <div class="card" data-color="green" ></div>
+    <div class="card" data-color="blue" ></div>
+    <div class="card" data-color="red" ></div>
+    <div class="card" data-color="green" ></div>
+
+
+    <script>
+
+        // write a script 
+        // double clicking a card will change its color to data color 
+        // also changes data color attribute to "used"
+
+        let cards = document.querySelectorAll('.card');
+        // console.log(cards);
+         
+        for(let i=0;i<cards.length;i++)
+        {
+            cards[i].addEventListener("dblclick", function(e)
+            {
+                // console.log(e.currentTarget);
+                e.currentTarget.classList.add(e.currentTarget.getAttribute('data-color'));
+                e.currentTarget.setAttribute('data-color','used');
+            })
+        }
+
+        
+
+    </script>
+    
+
+</body>
+</html>
