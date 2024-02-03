@@ -16,6 +16,36 @@
 
       //   Solution:
 
+
+        let doubleBtn = document.querySelector('.double');
+        doubleBtn.addEventListener('click', function(e)
+        {
+            e.currentTarget.remove();
+            let newBtn1 = document.createElement('button'); // it creates a button 
+            newBtn1.innerText='New Button 1';
+            newBtn1.setAttribute('class','double')
+            let newBtn2 = document.createElement('button');
+            newBtn2.innerText='New Button 2';
+            newBtn2.setAttribute('class','double')
+            let doubleHolder = document.getElementById('doubleHolder');
+            doubleHolder.appendChild(newBtn1);
+            doubleHolder.appendChild(newBtn2);
+        //  console.log(e.target);
+            // if(e.target.classList.contains('double'))
+            // {
+            //     e.target.remove();
+            //     let newBtn1 = document.createElement('button'); // it creates a button 
+            //     newBtn1.innerText='New Button 1';
+            //     newBtn1.setAttribute('class','double')
+            //     let newBtn2 = document.createElement('button');
+            //     newBtn2.innerText='New Button 2';
+            //     newBtn2.setAttribute('class','double')
+            //     let doubleHolder = document.getElementById('doubleHolder');
+            //     doubleHolder.appendChild(newBtn1);
+            //     doubleHolder.appendChild(newBtn2);
+            // }
+        })
+
      
 
     

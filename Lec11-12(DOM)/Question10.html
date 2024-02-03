@@ -32,11 +32,41 @@
 
 
 
+        let removeAll = document.querySelectorAll('.delete_button');
+     // individual delete is working here 
+        // for(let i=0; i<removeAll.length; i++){
+        //     removeAll[i].addEventListener('click', function(){
+        //         removeAll[i].parentElement.style.display='none';
+        //     })
+        // }
+
+       // remove all button is working here
+        let removeBtn = document.getElementById('removeAll');
+        removeBtn.addEventListener('click', function(){
+            for(let i=0; i<removeAll.length; i++){
+            
+                removeAll[i].parentElement.style.display='none';
+            }
+        }
+        );
+
+        // above two are correct code 
 
 
+        // approach 2 is as follows 
+        let ul= document.querySelector('ul');   
+        let Allli= document.querySelectorAll('li');
 
+        for(let i=0; i<Allli.length; i++){
+            Allli[i].addEventListener('click', function(e){
+                // it stops showing the div 
+                // Allli[i].style.display='none'; 
+                
+             e.currentTarget.remove(); // it deletes the div
+            })
+        }
 
-
+        
 
 
     </script>
