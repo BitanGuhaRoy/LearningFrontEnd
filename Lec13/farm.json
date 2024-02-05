@@ -1,0 +1,25 @@
+[
+
+    {
+        "name":"Bitan Guha Roy",
+        "products":["Laptop","Mobile","Tablet"],
+        "address":"Kolkata",
+        "phone":"1234567890",
+        "email":"bitanguharoy@gmail.com"
+    },
+    {
+        "name":"Badal Guha Roy",
+        "products":["Laptop","Mobile","Tablet"],
+        "address":"Kolkata",
+        "phone":"9188275868",
+        "email":"badalguharoy@gmail.com"
+    },
+    {
+        "name":"Pushpa Guha Roy",
+        "products":["Laptop","Mobile","Tablet"],
+        "address":"Kolkata",
+        "phone":"9188275868",
+        "email":"pushpaguharoy@gmail.com"
+    }
+    
+]
