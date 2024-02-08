@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.toolbox-container{
+    height: 5rem;
+    background-color: #4b4b4b;
+    display: flex;
+    align-items: center;
+}
+/* all children of toolbox-container */
+.toolbox-container > *{
+    margin: 4rem;
+}
+.toolbox-priority-cont{
+    height: 5rem;
+    width: 25rem;
+    background-color: #3d3d3d;
+    /* margin-left: 20px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+}
+.toolbox-priority-cont>*:hover{
+    background-color: #485460;
+}
+
+.color{
+    height: 3rem;
+    width: 6rem;
+}
+
+.light-pink{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+}
+
+.light-green{
+    background-color: lightgreen;
+    color: white;
+    justify-content: center;
+    align-items: center;
+   
+}
+.light-blue{
+    background-color: lightblue;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.black{
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-cont
+{
+    height: 3.5rem;
+    width: 8rem;
+    background-color:#3d3d3d ;
+    display: flex;
+}
+
+.action-cont>*{
+    /* display: flex; */
+    display: flex;
+    width: 50%;
+    font-size: 2rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.add-btn:hover{
+    background-color: green;
+   
+}
+
+.remove-btn:hover{
+    background-color: red;
+}
+.textarea-cont{
+    height: 100%;
+     width: 70%;
+     resize: none;
+     outline: none;
+     border: none;
+     background-color:#dfe4ea;
+     font-size: 1.5rem;
+     color: black;
+}
+
+.modal-cont{
+    height: 50vh;
+   width: 45vw;
+   display: none; 
+   /* initially we will not show the modal */
+   background-color: lightsalmon;
+   position: absolute;
+   top:30%;
+   left: 27%;
+   display: flex;
+}
+
+.priority-colors-container{
+    
+    height: 100%;
+     width: 30%;
+     /* display: flex; */
+     flex-direction: column;
+     background-color: #4b4b4b;
+     align-items: center;
+     justify-content: space-around;
+    /* margin: 5px; */
+
+}
+
+.priority-colors{
+    height: 25%;
+    width: 100%;
+    justify-content: space-around;
+    justify-content: center;
+    display: flex;
+}
+
+.active{
+    border: 4px solid salmon
+}
+
+.main-cont{
+    display: flex; 
+    gap:2rem;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.ticket-cont{
+    height: 12rem;
+    width: 15rem;
+    background-color: coral;
+}
+
+.ticket-color{
+    height: 1rem;
+    background-color: black;
+}
+
+.ticket-id{
+    background-color: yellow;
+    height: 2rem;
+}

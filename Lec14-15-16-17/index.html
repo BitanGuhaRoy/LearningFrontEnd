@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanaban Board</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/589957875e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="toolbox-container">
+        <div class="toolbox-priority-cont">
+            <div class="light-pink color" > Todo Tasks</div>
+            <div class="light-green color" style="color: white;">In progress</div>
+            <div class="light-blue color" style="color: white;">Validate These </div>
+            <div class="black color" style="color: white;"> Deployed</div>
+        </div>
+
+        <div class="action-cont" >
+            <div class="add-btn">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="remove-btn" >
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+    
+         <!-- Task Ticket  -->
+         <div class="main-cont">
+            <div class="ticket-cont">
+                <div class="ticket-color"></div>
+                <div class="ticket-id">12345</div>
+                <div class="task-area" contenteditable="false">Random Task</div>
+
+            </div>    
+       </div>
+
+    <!-- Modal container -->
+    <div class="modal-cont" style="display: none;">
+     <textarea class="textarea-cont" placeholder="Enter Your Task"></textarea>
+
+     <div class="priority-colors-container">
+        <!-- 1:47:07 in lec -->
+        <div class="light-pink priority-colors">Todo </div>
+        <div class="light-green priority-colors">Progress</div>
+        <div class=" light-blue priority-colors">validate</div>
+        <div class="active black priority-colors">Deploy</div>
+     </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
