@@ -35,32 +35,36 @@ body{
     height: 3rem;
     width: 6rem;
 }
-
-.light-pink{
+.priority-colors-container>*{
     color: white;
     justify-content: center;
     align-items: center;
+}
+.light-pink{
+    /* color: white;
+    justify-content: center;
+    align-items: center; */
     background-color: lightpink;
 }
 
 .light-green{
     background-color: lightgreen;
-    color: white;
+    /* color: white;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
    
 }
 .light-blue{
     background-color: lightblue;
-    color: white;
+    /* color: white;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 .black{
     background-color: black;
-    color: white;
+    /* color: white;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .action-cont
@@ -154,7 +158,7 @@ body{
 
 .ticket-color{
     height: 1rem;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .ticket-id{
