@@ -1,0 +1,2 @@
+when you create a method of the same name which already Exists inside the default Prototype and you include that in your 
+constructor prototype,then the constructor method will be called. 
