@@ -9,9 +9,16 @@ class Person
 
     isAdult()
     {
-        return this.age >= 18;
+        if(this.age >= 18)
+        {
+            return `${this.name} is an adult`;
+        }
+        else 
+        {
+            return  `${this.name} is not an adult`;
+        }
     }
 }
 
-let Person1 = new Person('Bitan', 25);
-console.log(Person1.isAdult());
+let person1 = new Person('Bitan', 25);
+console.log(person1.isAdult());
