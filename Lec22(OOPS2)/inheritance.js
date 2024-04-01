@@ -4,12 +4,18 @@ class Person{
         this.age = age;
        
     }
+    hello(){
+        console.log(` person saying hello`);
+    }
 }
 
 class Student extends Person{
     constructor(name, age, rollNo){
         super(name, age);
         this.rollNo = rollNo;
+    }
+    hello(){
+        console.log(` student saying hello`);
     }
 }
 
@@ -25,3 +31,4 @@ let Instructor1 = new Instructor('Bitan', 25, 100000);
 
 console.log(Student1);
 console.log(Instructor1);
+Student1.hello();
