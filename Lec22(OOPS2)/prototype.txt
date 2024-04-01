@@ -1,0 +1,1 @@
+Whenever a JS object is created one prototype obect will be attached, from which you will be able to use all the inbuilt properties.
