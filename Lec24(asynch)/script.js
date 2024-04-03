@@ -2,7 +2,7 @@ let hello1="hello 1";
 let hello2="hello 2";
 console.log(hello1);
 
-for(let i=0;i<10;i++)
+for(let i=0;i<1000000;i++)
 {
    
 }
