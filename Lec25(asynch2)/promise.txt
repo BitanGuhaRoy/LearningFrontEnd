@@ -1,0 +1,4 @@
+1. Made a promise :: pending state
+2. fulfilled promises :: resolved 
+3. not fulfilled promise:: rejected
+4. settled :: executed promise

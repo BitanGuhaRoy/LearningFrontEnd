@@ -27,7 +27,6 @@ function fileRead(err, data)
 }
 fs.readFile("f2.txt",fileRead2);
 // parallaly these callbacks are added into queue,so order is not maintained among callbacks 
-
 function fileRead2(err, data)
 {
    if(err)
