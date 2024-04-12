@@ -1,6 +1,7 @@
 // dive into file system module 
 const { log } = require("console");
 const fs= require("fs");
+const path = require("path");
 
 
 //1. read  file 
@@ -25,3 +26,21 @@ fs.unlinkSync("f6.txt");
 
 //5. fs modules with directories 
 
+// create and delete direcytory 
+// create directory 
+
+// fs.mkdirSync("myDirectory/mySubDirectory/deleted");
+
+// fs.rmdirSync("myDirectory/mySubDirectory/deleted");
+
+// 6. check whether a file/ directory exists or not
+
+let doesExist= fs.existsSync("myDirectory");
+
+console.log(doesExist);
+
+// fs.mkdirSync("myDirectory2")
+
+fs.writeFileSync("myDirectory/f33.txt","hi")
+
+// copy this into myDirectory2
