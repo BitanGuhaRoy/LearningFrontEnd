@@ -1,0 +1,2 @@
+This is a NPM package which will keep our server running, whenever there is nay changes that is automatically reflected, 
+we don't have to restart the server manually 

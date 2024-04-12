@@ -28,3 +28,7 @@ let destPath= path.join(dest,fileToBeCopied);
 fs.copyFileSync(source,destPath);
 
 console.log("file copied");
+
+
+// cut -> copy + delete
+fs.unlinkSync(source);
