@@ -30,6 +30,24 @@
       // Q- Make remove all button work  and make individual delete btn work 
       //   Solution:
 
+
+      let removeall = document.getElementById("all");
+
+      removeall.addEventListener("click", function () {
+        let deletebtn = document.querySelector("ul");
+      deletebtn.style.display = "none";
+
+      });
+    
+
+      let lists= document.querySelectorAll('li');
+     for(let i=0;i<lists.length;i++)
+     {
+        //  lists[i].style.display="none";
+        lists[i].addEventListener('click',function(){
+            lists[i].style.display="none";
+        })
+     }
     </script>
   </body>
 </html>

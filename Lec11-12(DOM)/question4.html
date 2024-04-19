@@ -64,15 +64,30 @@
         let cards = document.querySelectorAll('.card');
         // console.log(cards);
          
-        for(let i=0;i<cards.length;i++)
+        // for(let i=0;i<cards.length;i++)
+        // {
+        //     cards[i].addEventListener("dblclick", function(e)
+        //     {
+        //         // console.log(e.currentTarget);
+        //         e.currentTarget.classList.add(e.currentTarget.getAttribute('data-color'));
+        //         e.currentTarget.setAttribute('data-color','used');
+        //     })
+        // }
+
+        // practice code
+
+
+        cards.forEach(function(item, index)
         {
-            cards[i].addEventListener("dblclick", function(e)
-            {
-                // console.log(e.currentTarget);
-                e.currentTarget.classList.add(e.currentTarget.getAttribute('data-color'));
-                e.currentTarget.setAttribute('data-color','used');
-            })
-        }
+        item.addEventListener('click', function(e)
+        {
+        //    console.log(e.currentTarget.getAttribute('data-color'));
+           let color= e.currentTarget.getAttribute('data-color');
+             e.currentTarget.setAttribute('data-color','used');
+            e.currentTarget.classList.add(color);
+        })
+        })
+
 
         
 

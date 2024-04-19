@@ -8,17 +8,28 @@
     <title>DOM-Question1</title>
 </head>
 <body>
+
+    <!-- Q. After clicking on the button "Say Hello!" a div should be appended to the page with the text "Hello". -->
     <button id="btn_1">
         Say Hello!
+
+        
     </button>
+
+    
 
     <script>
         // on clicking the button append hello to the page
-        // let btn=document.getElementById("btn_1");
+        let btn=document.getElementById("btn_1");
 
         // or 
-        let btn= document.querySelector("#btn_1");
-
+        // let btn= document.querySelector("#btn_1");
+       // both will work 
+           
+            // getElementById is a method
+       // query selector is more powerful than getElementById as it can select by Id , class and tag name
+       // but here #,. has to ba passed to tell what kind of tag it is, Id or class. 
+       
         // definition of query selector is that it will select the first element with the given id
         // if we have multiple elements with the same id then it will select the first one only
         //if we have no match then it will return null
@@ -26,15 +37,29 @@
 
         // e event argument
         // it holds the information about the event that has occured
-        btn.addEventListener("click",function(e)
+
+
+        // btn.addEventListener("click",function(e)
+        // {
+        //     // console.log(e);
+        //     let divelem= document.createElement("div");// creates element in DOM
+        //     divelem.innerText="Hello";
+
+        //    let body=  document.querySelector('body')
+        //     body.appendChild(divelem);
+
+        // })
+
+
+        // practice code 
+        btn.addEventListener('contextmenu', function(e)// right click 
+        // btn.addEventListener('click', function(e) // left click
         {
-            // console.log(e);
-            let divelem= document.createElement("div");// creates element in DOM
-            divelem.innerText="Hello";
-
-           let body=  document.querySelector('body')
-            body.appendChild(divelem);
-
+        let div= document.createElement("div");
+        div.innerText="Hello";
+        let bodynew= document.querySelector('body');
+        bodynew.appendChild(div);
+        console.log(e);
         })
 
 

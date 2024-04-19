@@ -24,6 +24,7 @@
     <input type="text" id="pass" />
     <p>Caps on!</p>
     <script>
+
         //Q- Write a script which keeps checking the password being entered.
         //It should check if capslock is on or off
         //if its on it should not allow to type and show "caps on" on screen,
@@ -31,10 +32,44 @@
   
         //   Solution :
         
-  
+       function test(event)
+       {
+        if(event.code === "CapsLock"){
+        let isCapsLockOn = event.getModifierState("CapsLock");
+        if(isCapsLockOn) {
+           
+        let div= document.createElement("div");
+        div.setAttribute("id","capson");
+        div.innerText="Caps on!";
+        let bodynew= document.querySelector('body');
+        bodynew.appendChild(div);
+        console.log(event);
+        } 
+        else
+        {       
+        let div= document.createElement("div");
+        div.setAttribute("id","capson");
+        div.innerText="Caps off!";
+        let bodynew= document.querySelector('body');
+        bodynew.appendChild(div);
+        console.log(event);
+
+
+        let on = document.querySelectorAll('#capson');
+        on.forEach(function(e){
+              e.remove();
+        });
        
+        }
+    }
+       }
+        let change = document.querySelector('#pass');
+
+        change.addEventListener('keydown',test);
+        change.addEventListener('keyup',test);
           
-  
+        // The browser treats caps lock on as keydown and caps lock off as keyup,
+        // so we need to bind both keydown and keyup to detect a change in caps lock.
       
       </script>
 </body>
