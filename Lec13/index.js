@@ -1,9 +1,10 @@
 const temperatureField = document.querySelector(".temp");
+const searchField = document.querySelector(".searchField");
 const cityField = document.querySelector(".time_location p");
 const dateField = document.querySelector(".time_location span");
 const emojiField = document.querySelector(".weather_condition img");
 const weatherField = document.querySelector(".weather_condition span");
-const searchField = document.querySelector(".searchField");
+// const searchField = document.querySelector(".searchField");
 const form = document.querySelector("form");
 
 let target='Kolkata'
@@ -16,6 +17,7 @@ function search(e)
 {
     e.preventDefault(); // stops the page from refresh on form submit button
     // if this isn't called then page is refreshed and the new data is lost 
+    // things are set to default values 
     console.log("searching")
     target= searchField.value;
     fetchData(target);
